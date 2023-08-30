@@ -142,11 +142,11 @@ input:focus {
 }
 
 #submit {
-    background-color: #00adc8;
+    background-color: transparent;
     border: 1px solid transparent;
     height: 40px;
     border-radius: 100px;
-    color: #fcfbff;
+    color: #00adc8;
     font-size: 1em;
     font-weight: bold;
     box-shadow: 
@@ -157,7 +157,8 @@ input:focus {
 }
 
 #submit:hover {
-    box-shadow: 4px 4px 10px #b6bac3;
+    background-color: #00adc8;
+    color: #fcfbff;
     transition: all 300ms;
 }
 
@@ -166,8 +167,36 @@ input:focus {
     margin: auto;
 }
 
+#heart {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    transform: translateY(50px);
+    background-color: transparent;
+    width: 195px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow:
+        -4px -4px 10px #fbfeff,
+        4px 4px 10px #b6bac3;
+    #cora {
+        transition: all 200ms;
+    }
+
+}
+
+#heart:hover {
+    #cora {
+        background-color: transparent;
+        font-size: 1.1em;
+        transition: all 200ms;
+    }
+}
+
 #heart h2 {
     margin: auto;
     font-size: .8em;
-    transform: translateY(50px);
+    cursor: pointer;
 }
